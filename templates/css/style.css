@@ -1,0 +1,10 @@
+body {
+    background-color: grey;
+}
+.chat {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    border-color: green;
+    text-align: center;
+}
