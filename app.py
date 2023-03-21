@@ -3,12 +3,12 @@ import spacy
 import openai
 import concurrent.futures
 
-text = input("openai key: ")
+
 
 app = Flask(__name__)
 
 # Initialize OpenAI API key
-openai.api_key = text
+openai.api_key = "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"
 
 # Initialize spaCy model
 nlp = spacy.load("en_core_web_sm")
@@ -53,7 +53,7 @@ def home():
 @app.route("/chatbot", methods=["POST"])
 def chatbot():
     nlp = spacy.load("en_core_web_sm")
-    openai.api_key = text
+    openai.api_key = "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"
 
     # get user input from the form
     user_input = request.form["user_input"]
